@@ -1,0 +1,30 @@
+<!-- <p>
+  log-in works!
+</p>
+<input [(ngModel)]="email_id" placeholder="Email"/>
+<input type='password' [(ngModel)]="passwd" placeholder="name"/>
+<input type="submit" 
+{{email_id}}
+{{passwd}} 
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+  <input type="email" name="email_id" ngModel required #first="ngModel" placeholder="Email">
+  <br>
+  <input type='password' name="passwd" ngModel placeholder="password">
+  <button>Submit</button>
+</form>
+{{fs}}
+{{passwd}}-->
+<div class="container"> 
+  <h2>Log In</h2>
+  <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+    <div class="form-group">
+      <label>email id</label>
+      <input type="email" name="email_id" ngModel class="form-control">
+    </div>
+    <div class="form-group">
+      <label>password</label>
+      <input type="password" name="passwd" ngModel class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">submit</button> 
+  </form>
+</div>

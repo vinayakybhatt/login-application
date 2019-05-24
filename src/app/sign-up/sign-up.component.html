@@ -1,0 +1,21 @@
+<p>
+  sign-up works!
+</p>
+<div class="container"> 
+  <h2>Registration</h2>
+  <form #userRegister="ngForm" (ngSubmit)="onSubmit(userRegister.value)">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" ngModel class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" name="email_id" ngModel class="form-control">
+    </div>
+    <div class="form-group">
+      <label>password</label>
+      <input type="password" name="passwd" ngModel class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">submit</button> 
+  </form>
+</div>
