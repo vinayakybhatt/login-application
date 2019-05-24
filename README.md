@@ -27,3 +27,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 This project uses local storage as database.
+after ng serve
+open google chrome and type localstorage:4200/signUp and register. it will automatically redirect to logIn and if login successful, redirects to Dashboard
